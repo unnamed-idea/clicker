@@ -8,23 +8,15 @@ def click_next():
                [1500,620],
                [1730,630]]
     for loc in buttons:
-        print(loc)
         pyautogui.moveTo(loc)
         time.sleep(0.01)
         pyautogui.click()
 
 
-def click_next2():
-    pyautogui.moveTo(1500, 620)
-    pyautogui.click()
-def click_next3():
-    pyautogui.moveTo(1730, 630)
-    pyautogui.click()
-
 def go_random():
-    minx = 1000
+    minx = 1000 #top left corner of the window
     miny = 120
-    maxx = 1769
+    maxx = 1769 #bottom right corner of the window
     maxy = 580
     randx = random.randint(minx, maxx)
     randy = random.randint(miny, maxy)
